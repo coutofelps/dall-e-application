@@ -7,7 +7,7 @@ const RenderCards = ({data, title}) => {
   }
 
   return (
-    <h2 className="mt-5 font-bold text-[#6449ff] text-xl uppercase">{title.toLowerCase()}</h2>
+    <h2 className="mt-5 font-bold text-[#6449ff] text-xl uppercase">{title}</h2>
   )
 }
 
@@ -71,7 +71,7 @@ const Home = () => {
       </div>
 
       <div className="mt-16">
-        <FormField labelName="Search posts" type="text" name="text" placeholder="Search for any sentence here" value={searchText} handleChange={handleSearchChange}/>
+        <FormField labelName="Search posts:" type="text" name="text" placeholder="Search for any sentence here!" value={searchText} handleChange={handleSearchChange}/>
       </div>
 
       <div className="mt-10">

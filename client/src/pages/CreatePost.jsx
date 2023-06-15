@@ -81,7 +81,7 @@ const CreatePost = () => {
   }
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value})
+    setForm({...form, [e.target.name]: e.target.value})
   }
 
   const handleSurpriseMe = () => {
@@ -93,13 +93,13 @@ const CreatePost = () => {
     <section className="max-w-7x1 mx-auto">
       <div>
         <h1 className="font-extrabold text-[#222328] text-[32px]">Create</h1>
-        <p className="mt-2 text-[#666e75] text-[14px] max-w[500px]">Create imaginative and visually stunning images through DALL-E AI and share them with the community</p>
+        <p className="mt-2 text-[#666e75] text-[14px] max-w[500px]">Create imaginative and visually stunning images through DALL-E AI and share them with the community.</p>
       </div>
 
       <form className="mt-16 max-w-3x1" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-5">
-          <FormField labelName="Your name" type="text" name="name" placeholder="John Doe" value={form.name} handleChange={handleChange} />
-          <FormField labelName="Prompt" type="text" name="prompt" placeholder="a painting of a fox in the style of Starry Night" value={form.prompt} handleChange={handleChange} isSurpriseMe handleSurpriseMe={handleSurpriseMe} />
+          <FormField labelName="Your name:" type="text" name="name" placeholder="Put your name here" value={form.name} handleChange={handleChange} />
+          <FormField labelName="Prompt:" type="text" name="prompt" placeholder="a painting of a fox in the style of Starry Night" value={form.prompt} handleChange={handleChange} isSurpriseMe handleSurpriseMe={handleSurpriseMe} />
           <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-3 h-63 flex justify-center items-center">
             {form.photo ? (
               <img src={form.photo} alt={form.prompt} className="w-full h-full object-contain" />
@@ -122,7 +122,7 @@ const CreatePost = () => {
         </div>
 
         <div className="mt-10">
-          <p className="mt-2 text-[#666e75] text-[14px]">Once you have created the image you want, you can share it with others in the community</p>
+          <p className="mt-2 text-[#666e75] text-[14px]">Once you have created the image you want, you can share it with others in the community!</p>
           <button type="submit" className="mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center">
             {loading ? 'Sharing...' : 'Share with the community'}
           </button>
