@@ -22,7 +22,8 @@ Esta aplicação foi criada para que eu possa por em prática a utilização do 
 
 #### Node.js
 É obrigatório que se tenha o Node.js instalado em sua máquina na versão >=14.20.1.
-Depois, faça:
+
+# Instalação
 
 ## Back-end
 ### Vá até a pasta do servidor back-end:
