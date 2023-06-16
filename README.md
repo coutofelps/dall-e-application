@@ -12,7 +12,7 @@ Esta aplicação foi criada para que eu possa por em prática a utilização do 
 - Node.js
 - MongoDB
 - Cloudinary
-- Renderer
+- Render
 - Vercel
 - OpenAI
 - DALL-E
